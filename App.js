@@ -17,7 +17,7 @@
 
 
 let click = 1;
-let myPlayer = `<img src="cross.png" class="img-fluid" alt="..." id="img" style="height:20px;">`;
+let myPlayer = `<img src="cross.png" height="60px" width="60px"  class="img-fluid" alt="..." id="img" style="height:20px;">`;
 
 let allDiv = document.querySelectorAll('#main', '.myDiv');
 allDiv.forEach(eachDiv => {
@@ -30,14 +30,14 @@ function MyFun(e) {
     if (click <= 9) {
 
 
-        if (myPlayer === `<img src="cross.png"class="img-fluid" alt="...">`) {
-            MyDivs.innerHTML = `<img src="cross.png"class="img-fluid" alt="...">`
-            myPlayer = `<img src="circle.png" class="img-fluid" id="img" alt="...">`
+        if (myPlayer === `<img src="cross.png" height="60px" width="60px"  class="img-fluid" alt="...">`) {
+            MyDivs.innerHTML = `<img src="cross.png" height="60px" width="60px"  class="img-fluid" alt="...">`
+            myPlayer = `<img src="circle.png" height="60px" width="60px"  class="img-fluid" id="img" alt="...">`
 
 
         } else {
-            MyDivs.innerHTML = `<img src="circle.png" class="img-fluid" alt="...">`;
-            myPlayer = `<img src="cross.png"class="img-fluid" alt="...">`
+            MyDivs.innerHTML = `<img src="circle.png" height="60px" width="60px"  class="img-fluid" alt="...">`;
+            myPlayer = `<img src="cross.png" height="60px" width="60px"  class="img-fluid" alt="...">`
         }
         click++;
         if (checkwin()) {
